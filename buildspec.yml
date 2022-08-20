@@ -7,8 +7,8 @@ phases:
   build:
     commands:
       - echo Build Starting on `date`
-      - cd
-      - chmod +x ./gradlew
+      - cd awsDeploy
+      - chmod +x gradlew
       - ./gradlew build
   post_build:
     commands:
