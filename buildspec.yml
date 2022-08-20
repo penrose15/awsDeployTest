@@ -7,15 +7,15 @@ phases:
   build:
     commands:
       - echo Build Starting on `date`
-      - cd awsDeployTest
+      - cd awsDeploy
       - chmod +x ./gradlew
       - ./gradlew build
   post_build:
     commands:
-      - echo $(basename ./awsDeployTest/build/libs/*.jar)
+      - echo $(basename ./awsDeploy/build/libs/*.jar)
 artifacts:
   files:
-    - awsDeployTest/build/libs/*.jar
-    - awsDeployTest/scripts/**
-    - awsDeployTest/appspec.yml
+    - awsDeploy/build/libs/*.jar
+    - awsDeploy/scripts/**
+    - awsDeploy/appspec.yml
   discard-paths: yes
