@@ -5,7 +5,7 @@ files:
   - source:  /
     destination: /home/ubuntu/action
     overwrite: true
-file_exists_behavior: OVERWRITE
+#file_exists_behavior: OVERWRITE
 
 permissions:
   - object: /
