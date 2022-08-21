@@ -39,7 +39,7 @@ public class UserApiController {
     }
     @GetMapping("/index")
     public String index() {
-        return "hello Spring deploy success";
+        return "gitActions auto codeDeploy Success!!";
     }
 
 
