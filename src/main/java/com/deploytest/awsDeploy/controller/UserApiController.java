@@ -37,6 +37,12 @@ public class UserApiController {
         User user = userService.update(mapper.patchUserDtoToUser(patchUserDto));
         return new ResponseEntity<>(mapper.userToResponseUserDto(user), HttpStatus.OK);
     }
+    @GetMapping("/index")
+    public String index() {
+        return "hello Spring and go to hell";
+    }
+
+
     //userId로 user조회
     @GetMapping("/{user-id}")
     public ResponseEntity get(@PathVariable("user-id") Long userId) {
